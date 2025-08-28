@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QTROP WINNERS HUB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: black;
+      color: white;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+    }
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+      flex-direction: column;
+    }
+    /* Page One: LED banner */
+    .led-text {
+      font-size: 42px;
+      font-weight: 800;
+      color: #00ffcc;
+      text-transform: uppercase;
+      border: 3px solid #00ffcc;
+      padding: 20px;
+      animation: flicker 1.5s infinite alternate;
+    }
+    @keyframes flicker {
+      from { opacity: 1; }
+      to { opacity: 0.7; }
+    }
+
+    /* Page Two: Gold Pro Text */
+    .gold-text {
+      font-size: 55px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #FFD700; }
+      to { text-shadow: 0 0 20px #FFA500; }
+    }
+
+    /* Page Three: Winners Text */
+    .winner-text {
+      font-size: 60px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      animation: shine 3s linear infinite;
+    }
+    @keyframes shine {
+      from { background-position: -200px; }
+      to { background-position: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page One -->
+  <section>
+    <h1 class="led-text">🚀 WELCOME TO QTROP WINNERS HUB HOME OF MATCHES 🚀</h1>
+  </section>
+
+  <!-- Page Two -->
+  <section>
+    <h1 class="gold-text">TRADE LIKE A PRO WITH QTROP</h1>
+  </section>
+
+  <!-- Page Three -->
+  <section>
+    <h1 class="winner-text">QTROP – WHERE WINNERS ARE MADE</h1>
+  </section>
+</body>
+</html>
